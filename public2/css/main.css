@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+header { text-align: center; }
+header h1 { margin: 0 auto; }
+
+footer { text-align: center; }
+footer h6, footer h5 { margin: 0 auto; }
+
+.baltazore .image {
+  background-image: url("../img/baltazore.jpg");
+}
+
+.oivoodoo .image {
+  background-image: url("../img/oivoodoo.jpg");
+}
+
+section .card .image {
+  height: 100%;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  border-radius: 1em;
+}
+
+section .card .info {
+  display: none;
+  height: 100%;
+  position: relative;
+}
+
+section .card .info .nickname {
+  position: absolute;
+  top: 40%;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+section .card .info .mail {
+  position: absolute;
+  top: 80%;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+section .card .info span a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Portrait mode  */
+@media screen and (orientation: portrait) {
+  .container {
+    width: calc(6 * 100% / 8);
+    margin: 0 auto;
+  }
+
+  header { height: calc(2* 100% / 12); }
+  header h1 { padding-top: calc(100% / 12); }
+
+  footer { height: calc(100% / 12); }
+  footer .content { padding-top: calc(100% / 12); }
+
+  section { height: calc(9 * 100% / 12); }
+  section .card {
+    height: calc(4 * 100% / 9);
+    margin-left: calc(100% / 6);
+    margin-right: calc(100% / 6);
+    margin-bottom: calc(100% / 9);
+  }
+}
+
+/* Landscape mode */
+@media screen and (orientation: landscape) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header { height: calc(100% / 8); }
+  header h1 { padding-top: calc(0.25 * 100% / 8); }
+
+  footer { height: calc(100% / 8); }
+  footer .content { padding-top: calc(0.25 * 100% / 8); }
+
+  section { height: calc(6 * 100% / 8); }
+  section .card {
+    height: calc(5 * 100% / 6);
+    width: calc(5 * 100% / 12);
+    margin-left: calc(0.5 * 100% / 12);
+    margin-right: calc(0.5 * 100% / 12);
+    margin-top: calc(0.25 * 100% / 6);
+    margin-bottom: calc(0.25 * 100% / 6);
+    float: left;
+  }
+}
