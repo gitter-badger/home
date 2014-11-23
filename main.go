@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/go-martini/martini"
-	render "github.com/martini-contrib/render"
+	"github.com/martini-contrib/render"
 )
 
 func main() {
